@@ -1,7 +1,7 @@
 const Joi = require('joi');
 
 module.exports = {
-    validateGenre: (genre) => {
+    validateGenre: genre => {
         const schema = {
             name: Joi.string().required().min(5).max(50).label('Name')
         };
